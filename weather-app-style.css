@@ -1,0 +1,459 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300);
+    body {
+        width: 100%;
+        height: 100%;
+        background-color: #263238;
+        margin: 0;
+        padding: 100px;
+        font-family: 'Roboto', Helvetica, Arial, sans-serif;
+        color: #fff;
+    }
+
+    #myTitle{
+        font-family: 'Roboto';
+        text-align: center;
+        text-indent: 20px;
+        padding-bottom: 50px;
+    }
+
+    .widget-container {
+        width: 612px;
+        height: 412px;
+        display: block;
+        background-color: #313e45;
+        border-radius: 25px;
+        /*   border: 5px solid #eceff1; */
+        margin: 0 auto;
+    }
+
+
+    /* Widget 4 Quarter Division here */
+
+    .top-left {
+        height: 60%;
+        width: 50%;
+        /*   background-color:red; */
+        padding: 55px 0 0 70px;
+        display: inline-block;
+    }
+
+    .top-right {
+        height: 60%;
+        width: 50%;
+        /*   background-color: blue; */
+        float: right;
+        padding: 55px 0 0 0;
+    }
+
+    .bottom-left {
+        height: 40%;
+        width: 45%;
+        /*   background-color:orange; */
+        float: left;
+        margin: 0;
+        padding: 40px 0 0 50px;
+    }
+
+    .bottom-right {
+        height: 40%;
+        width: 55%;
+        /*   background-color: brown; */
+        float: right;
+        padding: 25px 0 0 60px;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* Top-left Div CSS */
+
+    #city {
+        font-weight: 900;
+        font-size: 25px;
+    }
+
+    #day {
+        font-weight: 700;
+        font-size: 25px;
+        margin-top: 18px;
+    }
+
+    #date {
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 4px;
+    }
+
+    #time {
+        font-weight: 400;
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+    #codepen-link {
+        font-weight: 400;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .top-left > a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .top-left > a:hover {
+        color: #b0bec5;
+    }
+
+
+    /* Top-Right Div CSS */
+
+    #weather-status {
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .top-right > img {
+        width: 120px;
+        height: 120px;
+        display: block;
+        margin: 15px auto 0 auto;
+    }
+
+
+    /* Horizontal-Half-divider */
+
+    .horizontal-half-divider {
+        width: 100%;
+        height: 3px;
+        margin-top: -5px;
+        background-color: #263238;
+    }
+
+    .vertical-half-divider {
+        width: 3px;
+        position: absolute;
+        height: 167px;
+        background-color: #263238;
+        float: right;
+        display: inline-block;
+        padding: 0;
+    }
+
+
+    /* Bottom-left CSS */
+
+    #temperature,
+    #celsius,
+    #temp-divider,
+    #fahrenheit {
+        display: inline;
+        vertical-align: middle;
+    }
+
+    #temperature {
+        font-size: 60px;
+        font-weight: 800;
+        margin-right: 5px;
+    }
+
+    #celsius {
+        margin-right: 10px;
+    }
+
+    #fahrenheit {
+        margin-right: 5px;
+        color: #b0bec5;
+    }
+
+    #celsius,
+    #temp-divider,
+    #fahrenheit {
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    #celsius:hover,
+    #fahrenheit:hover {
+        cursor: pointer;
+    }
+
+
+
+
+    /* Bottom-Right CSS */
+
+    .other-details-key {
+        float: left;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .other-details-values {
+        float: left;
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 40px;
+    }
+
+    .all-icon {
+        margin-bottom: 20px;
+    }
+
+    div.hide {
+        display: none;
+    }
+
+    .icon {
+        color: #ffffff;
+        position: relative;
+        display: inline-block;
+        width: 12rem;
+        height: 10rem;
+    }
+
+    .cloud {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        width: 3.6875rem;
+        height: 3.6875rem;
+        margin: -1.84375rem;
+        background: currentColor;
+        border-radius: 50%;
+        box-shadow: -2.1875rem 0.6875rem 0 -0.6875rem, 2.0625rem 0.9375rem 0 -0.9375rem, 0 0 0 0.375rem #fff, -2.1875rem 0.6875rem 0 -0.3125rem #fff, 2.0625rem 0.9375rem 0 -0.5625rem #fff;
+    }
+
+    .cloud:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -0.5rem;
+        display: block;
+        width: 4.5625rem;
+        height: 1rem;
+        background: currentColor;
+        box-shadow: 0 0.375rem #fff;
+    }
+
+    .cloud:nth-child(2) {
+        z-index: 0;
+        background: #fff;
+        box-shadow: -2.1875rem 0.6875rem 0 -0.6875rem #fff, 2.0625rem 0.9375rem 0 -0.9375rem #fff, 0 0 0 0.375rem #fff, -2.1875rem 0.6875rem 0 -0.3125rem #fff, 2.0625rem 0.9375rem 0 -0.5625rem #fff;
+        opacity: 0.3;
+        -webkit-transform: scale(0.5) translate(6rem, -3rem);
+        -ms-transform: scale(0.5) translate(6rem, -3rem);
+        transform: scale(0.5) translate(6rem, -3rem);
+        -webkit-animation: cloud 4s linear infinite;
+        animation: cloud 4s linear infinite;
+    }
+
+    .cloud:nth-child(2):after {
+        background: #fff;
+    }
+
+    .sun {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: -1.25rem;
+        background: currentColor;
+        border-radius: 50%;
+        box-shadow: 0 0 0 0.375rem #fff;
+        -webkit-animation: spin 12s infinite linear;
+        animation: spin 12s infinite linear;
+    }
+
+    .rays {
+        position: absolute;
+        top: -2rem;
+        left: 50%;
+        display: block;
+        width: 0.375rem;
+        height: 1.125rem;
+        margin-left: -0.1875rem;
+        background: #fff;
+        border-radius: 0.25rem;
+        box-shadow: 0 5.375rem #fff;
+    }
+
+    .rays:before,
+    .rays:after {
+        content: '';
+        position: absolute;
+        top: 0rem;
+        left: 0rem;
+        display: block;
+        width: 0.375rem;
+        height: 1.125rem;
+        -webkit-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+        transform: rotate(60deg);
+        -webkit-transform-origin: 50% 3.25rem;
+        -ms-transform-origin: 50% 3.25rem;
+        transform-origin: 50% 3.25rem;
+        background: #fff;
+        border-radius: 0.25rem;
+        box-shadow: 0 5.375rem #fff;
+    }
+
+    .rays:before {
+        -webkit-transform: rotate(120deg);
+        -ms-transform: rotate(120deg);
+        transform: rotate(120deg);
+    }
+
+    .cloud + .sun {
+        margin: -2rem 1rem;
+    }
+
+    .rain,
+    .lightning,
+    .snow {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        width: 3.75rem;
+        height: 3.75rem;
+        margin: 0.375rem 0 0 -2rem;
+        background: currentColor;
+    }
+
+    .rain:after {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        width: 1.125rem;
+        height: 1.125rem;
+        margin: -1rem 0 0 -0.25rem;
+        background: #0cf;
+        border-radius: 100% 0 60% 50% / 60% 0 100% 50%;
+        box-shadow: 0.625rem 0.875rem 0 -0.125rem rgba(255, 255, 255, 0.2), -0.875rem 1.125rem 0 -0.125rem rgba(255, 255, 255, 0.2), -1.375rem -0.125rem 0 rgba(255, 255, 255, 0.2);
+        -webkit-transform: rotate(-28deg);
+        -ms-transform: rotate(-28deg);
+        transform: rotate(-28deg);
+        -webkit-animation: rain 3s linear infinite;
+        animation: rain 3s linear infinite;
+    }
+
+    .bolt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1rem;
+        height: 0.5rem;
+        margin: -0.875rem 0 0 -0.5rem;
+        color: #fff;
+        background: #fff;
+        opacity: 0.3;
+        -webkit-animation: lightning 2s linear infinite;
+        animation: lightning 2s linear infinite;
+    }
+
+    .bolt:nth-child(2) {
+        width: 0.5rem;
+        height: 0.25rem;
+        margin: -1.875rem 0 0 -1.5rem;
+        -webkit-transform: translate(2.5rem, 2.25rem);
+        -ms-transform: translate(2.5rem, 2.25rem);
+        transform: translate(2.5rem, 2.25rem);
+        opacity: 0.2;
+        -webkit-animation: lightning 1.5s linear infinite;
+        animation: lightning 1.5s linear infinite;
+    }
+
+    .bolt:before,
+    .bolt:after {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        margin: -1.75rem 0 0 -1.25rem;
+        border-top: 1.25rem solid transparent;
+        border-right: 0.75rem solid;
+        border-bottom: 0.75rem solid;
+        border-left: 0.5rem solid transparent;
+        -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+        transform: skewX(-10deg);
+    }
+
+    .bolt:after {
+        margin: -0.25rem 0 0 -0.0125rem;
+        border-top: 0.75rem solid;
+        border-right: 0.5rem solid transparent;
+        border-bottom: 1.25rem solid transparent;
+        border-left: 0.75rem solid;
+        -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+        transform: skewX(-10deg);
+    }
+
+    .bolt:nth-child(2):before {
+        margin: -0.875rem 0 0 -0.75rem;
+        border-top: 0.625rem solid transparent;
+        border-right: 0.375rem solid;
+        border-bottom: 0.375rem solid;
+        border-left: 0.25rem solid transparent;
+    }
+
+    .bolt:nth-child(2):after {
+        margin: -0.125rem 0 0 0;
+        border-top: 0.375rem solid;
+        border-right: 0.25rem solid transparent;
+        border-bottom: 0.625rem solid transparent;
+        border-left: 0.375rem solid;
+    }
+
+    .flake:before,
+    .flake:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -1.25rem 0 0 -1.25rem;
+        content: '\2744';
+        color: #fff;
+        list-height: 1em;
+        opacity: 0.2;
+        -webkit-animation: spin 8s linear infinite reverse;
+        animation: spin 8s linear infinite reverse;
+    }
+
+    .flake:after {
+        margin: -0.125rem 0 0 -1.375rem;
+        font-size: 1.5rem;
+        opacity: 0.4;
+        -webkit-animation: spin 14s linear infinite;
+        animation: spin 14s linear infinite;
+    }
+
+    .flake:nth-child(2):before {
+        margin: -0.875rem 0 0 0.25rem;
+        font-size: 1.25rem;
+        opacity: 0.2;
+        -webkit-animation: spin 10s linear infinite;
+        animation: spin 10s linear infinite;
+    }
+
+    .flake:nth-child(2):after {
+        margin: 0.5rem 0 0 0.125rem;
+        font-size: 2rem;
+        opacity: 0.4;
+        -webkit-animation: spin 16s linear infinite reverse;
+        animation: spin 16s linear infinite reverse;
+    }
